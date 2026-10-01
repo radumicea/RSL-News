@@ -9,3 +9,11 @@ whisper_large-v3-turbo
 whisperx-align_ro
 runs
 wandb
+thumbs/
+# created by download.sh / extract_poses.sh; distributed separately
+/mp4s/
+/logs/
+/dataset/
+# MediaPipe models, downloaded on first use
+/lib/mp_holistic_plus/assets/*.task
+/lib/mp_holistic_plus/assets/*.tflite
