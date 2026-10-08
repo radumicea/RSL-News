@@ -16,7 +16,8 @@ Each manifest entry points at a protv.ro episode page. The playable stream is
 behind a player embed and is signed with a short expiry, so it is resolved at
 download time rather than stored in the manifest.
 
-Segment bounds are frame indices into the source video. They are converted with
+Segment bounds [start, end) are frame indices into the source video (end
+exclusive). They are converted with
 the stream's own start_time taken into account -- these streams start at PTS
 0.08, so a bare frame/fps timestamp lands two frames early.
 
@@ -124,7 +125,7 @@ def grab_segment(manifest_url: str, stream: int, start_time: float,
                  segment: dict, crop: dict, dest: Path) -> int:
     """Fetch one cropped segment. Returns bytes written."""
     first, last = segment['start'], segment['end']
-    count = last - first + 1
+    count = last - first
     partial = dest.with_suffix('.part')
 
     result = subprocess.run(
@@ -201,7 +202,7 @@ def main() -> int:
         for item in items:
             for segment in pending_segments(item, args.root):
                 print(f"{segment_path(item, segment['index'], args.root)}  "
-                      f"[{segment['start']}-{segment['end']}] "
+                      f"[{segment['start']}, {segment['end']}) "
                       f"crop {item['crop']['w']}x{item['crop']['h']}"
                       f"+{item['crop']['x']}+{item['crop']['y']}")
                 total += 1

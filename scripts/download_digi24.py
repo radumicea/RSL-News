@@ -14,7 +14,8 @@ Produces:
 
     <root>/<yyyy>/<mm>/<dd>/segment_<i>.mp4
 
-Segment bounds are frame indices into the source video. They are converted with
+Segment bounds [start, end) are frame indices into the source video (end
+exclusive). They are converted with
 the stream's own start_time taken into account -- seeking with a bare
 frame/fps timestamp lands on the wrong frame whenever a stream does not start
 at PTS 0.
@@ -196,7 +197,7 @@ def main() -> int:
         for item in items:
             for segment in pending_segments(item, args.root):
                 print(f"{segment_path(item, segment['index'], args.root)}  "
-                      f"[{segment['start']}-{segment['end']}] "
+                      f"[{segment['start']}, {segment['end']}) "
                       f"crop {item['crop']['w']}x{item['crop']['h']}"
                       f"+{item['crop']['x']}+{item['crop']['y']}")
                 total += 1

@@ -6,8 +6,8 @@
 #
 # The downloaders are in scripts/ and read the segment lists in manifests/.
 #
-# Before downloading it checks what the downloaders need and installs what it
-# can (see --help). Stop it with Ctrl-C and run the same command again to resume:
+# It runs them with the Python environment of requirements.txt (.venv) and checks
+# what else they need (see --help). Stop it with Ctrl-C and run the same command again to resume:
 # finished segments are skipped, an interrupted one is fetched again from its
 # start, and the logs are appended to.
 
@@ -17,13 +17,12 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 ROOT="$HERE"
 COOKIES=
-PYTHON=python3
+PY="$HERE/.venv/bin/python"
 YTDLP=
 ONLY=primatv,protv,digi24
 DRY_RUN=
 SETUP=1
 ENV_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/rsl-news-download"
-POT_VERSION=2.0.0
 POT_PORT=4416  # where the PO-token plugin looks for its server by default
 PRIMA_WORKERS=4
 PROTV_WORKERS=16
@@ -46,27 +45,24 @@ Options:
       --prima-workers N     PrimaTV videos at once (default: $PRIMA_WORKERS)
       --protv-workers N     ProTV episodes at once (default: $PROTV_WORKERS)
       --digi-workers N      Digi24 days at once (default: $DIGI_WORKERS)
-      --env DIR             where the tools below are installed
+      --python PATH         Python with the packages of requirements.txt
+                            (default: .venv/bin/python next to this script)
+      --yt-dlp PATH         yt-dlp to use (default: the one next to --python)
+      --env DIR             where the PO-token server is built
                             (default: $ENV_DIR)
-      --no-setup            install nothing: use --python, --yt-dlp and a
-                            PO-token server that you provide
-      --python PATH         Python used to create the environment, or to run
-                            the downloaders with --no-setup (default: $PYTHON)
-      --yt-dlp PATH         yt-dlp to use (default: the one installed in --env)
-      --pot-version V       bgutil PO-token provider version, plugin and server
-                            alike (default: $POT_VERSION)
+      --no-setup            update and build nothing: use --yt-dlp as it is and
+                            a PO-token server that you provide
   -h, --help                show this help
 
-Needed on the system (checked, not installed):
-  all channels   Python >= 3.8 with venv, ffmpeg and ffprobe
+Needed (checked, not installed):
+  all channels   the Python environment of requirements.txt (README.md),
+                 ffmpeg and ffprobe
   PrimaTV        Node.js >= 20; git and npm on the first run only
 
-Installed into --env automatically:
-  all channels   requests, beautifulsoup4
-  PrimaTV        yt-dlp (updated on every run: YouTube changes often) and the
-                 bgutil PO-token provider (plugin + server). The server is
-                 started for the run and stopped afterwards; one already
-                 listening on 127.0.0.1:$POT_PORT is used as it is.
+Done for PrimaTV (unless --no-setup): yt-dlp is updated on every run (YouTube
+changes often), and the bgutil PO-token server of the same version as the
+plugin is built (first run only), started for the run and stopped afterwards.
+One already listening on 127.0.0.1:$POT_PORT is used as it is.
 EOF
 }
 
@@ -95,9 +91,8 @@ while [ $# -gt 0 ]; do
         --digi-workers)     DIGI_WORKERS=$(number "$1" "${2:-}") || exit 2; shift 2 ;;
         --env)              ENV_DIR=$(value "$@") || exit 2; shift 2 ;;
         --no-setup)         SETUP=; shift ;;
-        --python)           PYTHON=$(value "$@") || exit 2; shift 2 ;;
+        --python)           PY=$(value "$@") || exit 2; shift 2 ;;
         --yt-dlp)           YTDLP=$(value "$@") || exit 2; shift 2 ;;
-        --pot-version)      POT_VERSION=$(value "$@") || exit 2; shift 2 ;;
         -h | --help)        usage; exit 0 ;;
         *)                  echo "unknown option: $1" >&2; usage >&2; exit 2 ;;
     esac
@@ -125,12 +120,13 @@ wanted primatv && [ -z "$DRY_RUN" ] && FETCH_PRIMA=1
 missing=()
 have ffmpeg || missing+=(ffmpeg)
 have ffprobe || missing+=("ffprobe (part of ffmpeg)")
-have "$PYTHON" || missing+=("Python ($PYTHON)")
 [ -n "$FETCH_PRIMA" ] && ! have node && missing+=("Node.js >= 20")
 [ ${#missing[@]} -eq 0 ] || die "not found: ${missing[*]}. Install them and run again."
 
-"$PYTHON" -c 'import sys; sys.exit(sys.version_info < (3, 8))' \
-    || die "Python >= 3.8 is needed ($PYTHON is $("$PYTHON" --version 2>&1))"
+[ -x "$PY" ] || die "no Python environment at $PY; create it (README.md):
+       python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt"
+"$PY" -c 'import requests, bs4' 2>/dev/null \
+    || die "$PY cannot import requests and bs4: install requirements.txt into it"
 if [ -n "$FETCH_PRIMA" ]; then
     node -e 'process.exit(parseInt(process.versions.node) >= 20 ? 0 : 1)' \
         || die "Node.js >= 20 is needed (found $(node --version))"
@@ -141,30 +137,15 @@ fi
 
 mkdir -p "$ROOT/logs" || die "cannot create $ROOT"
 
-# ---- Python environment ----------------------------------------------------
-if [ -n "$SETUP" ]; then
-    VENV="$ENV_DIR/venv"
-    if [ ! -x "$VENV/bin/python" ]; then
-        say "creating a Python environment in $VENV"
-        mkdir -p "$ENV_DIR" && "$PYTHON" -m venv "$VENV" \
-            || die "could not create it (on Debian/Ubuntu: apt install python3-venv)"
+# ---- yt-dlp (PrimaTV) ------------------------------------------------------
+[ -n "$YTDLP" ] || YTDLP="$(dirname "$PY")/yt-dlp"
+if [ -n "$FETCH_PRIMA" ]; then
+    if [ -n "$SETUP" ]; then
+        say "updating yt-dlp"
+        "$PY" -m pip install --quiet --disable-pip-version-check --upgrade yt-dlp \
+            || die "pip install --upgrade yt-dlp failed"
     fi
-    PY="$VENV/bin/python"
-    pip=("$PY" -m pip install --quiet --disable-pip-version-check)
-    say "installing requests, beautifulsoup4"
-    "${pip[@]}" requests beautifulsoup4 || die "pip install failed"
-    if [ -n "$FETCH_PRIMA" ]; then
-        say "installing / updating yt-dlp, bgutil-ytdlp-pot-provider $POT_VERSION"
-        "${pip[@]}" --upgrade yt-dlp || die "pip install yt-dlp failed"
-        "${pip[@]}" "bgutil-ytdlp-pot-provider==$POT_VERSION" || die "pip install of the PO-token plugin failed"
-    fi
-    [ -n "$YTDLP" ] || YTDLP="$VENV/bin/yt-dlp"
-else
-    PY="$PYTHON"
-    [ -n "$YTDLP" ] || YTDLP=yt-dlp
-    "$PY" -c 'import requests, bs4' 2>/dev/null \
-        || die "--no-setup: $PY cannot import requests and bs4 (pip install requests beautifulsoup4)"
-    [ -z "$FETCH_PRIMA" ] || have "$YTDLP" || die "--no-setup: yt-dlp not found ($YTDLP)"
+    have "$YTDLP" || die "yt-dlp not found ($YTDLP)"
 fi
 
 # Ctrl-C / kill stops every downloader and its ffmpeg / yt-dlp children.
@@ -179,12 +160,15 @@ if [ -n "$FETCH_PRIMA" ]; then
     elif [ -z "$SETUP" ]; then
         die "--no-setup: no PO-token server on 127.0.0.1:$POT_PORT (see scripts/download_prima.py --help)"
     else
+        POT_VERSION=$("$PY" -c 'import importlib.metadata as m; print(m.version("bgutil-ytdlp-pot-provider"))' 2>/dev/null) \
+            || die "$PY has no bgutil-ytdlp-pot-provider: install requirements.txt into it"
         repo="$ENV_DIR/bgutil-ytdlp-pot-provider-$POT_VERSION"
         if [ ! -f "$repo/server/build/main.js" ]; then
             have git || die "git is needed (once) to fetch the PO-token server"
             have npm || die "npm is needed (once) to build the PO-token server"
             say "fetching and building the PO-token server $POT_VERSION (first run only)"
             rm -rf "$repo"  # left over from an interrupted first run
+            mkdir -p "$ENV_DIR" || die "cannot create $ENV_DIR"
             git clone --quiet --depth 1 --branch "$POT_VERSION" \
                 https://github.com/Brainicism/bgutil-ytdlp-pot-provider.git "$repo" \
                 || die "git clone of the PO-token server failed"

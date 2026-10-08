@@ -29,8 +29,8 @@ The format is pinned to the entry's source_height. The crop coordinates are
 only valid for that resolution, and a video that was 720p when the dataset was
 built may offer 1080p today, so picking "best" would silently mis-crop.
 
-Segment bounds are frame indices into the source video, converted with the
-stream's own start_time taken into account.
+Segment bounds [start, end) are frame indices into the source video (end
+exclusive), converted with the stream's own start_time taken into account.
 
 By default one video is downloaded at a time; --workers N downloads N videos
 at once (each keeps its source file under <root> until its segment is cut).
@@ -130,7 +130,7 @@ def grab_segment(path: Path, start_time: float, segment: dict,
                  crop: dict, dest: Path) -> int:
     """Cut one cropped segment. Returns bytes written."""
     first, last = segment['start'], segment['end']
-    count = last - first + 1
+    count = last - first
     partial = dest.with_suffix('.part')
 
     result = subprocess.run(
@@ -212,7 +212,7 @@ def main() -> int:
         for item in items:
             for segment in pending_segments(item, args.root):
                 print(f"{segment_path(item, segment['index'], args.root)}  "
-                      f"[{segment['start']}-{segment['end']}] "
+                      f"[{segment['start']}, {segment['end']}) "
                       f"{item['source_height']}p crop "
                       f"{item['crop']['w']}x{item['crop']['h']}"
                       f"+{item['crop']['x']}+{item['crop']['y']}")

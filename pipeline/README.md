@@ -1,12 +1,14 @@
 # RSL-News
 
+> This is the code that originally built the dataset, kept as it was (some steps were run by hand). It is not needed to reproduce the release: see the [top-level README](../README.md).
+
 Romanian Sign Language had no continuous, sentence-level corpus. Recognition of isolated signs, yes; translation, nothing. This repository is the pipeline that built one: **1,222 hours** of interpreted news broadcasts, spatially cropped to the interpreter, temporally segmented down to the parts where somebody is actually signing, and aligned sentence by sentence with automatically transcribed Romanian speech. No glosses at any point.
 
 The data comes from a legal accident. Romanian Audiovisual Law No. 504/2002, Art. 42¹ obliges national broadcasters to interpret at least 30 minutes of news or debate programs into RSL every single day. Six years of that, across three channels, sits in public archives. RSL-News is what happens when you mine it.
 
 On top of the corpus we trained the first RSL translation baselines, reaching **11.16 BLEU-4** on the held-out test split with a 6.6M-parameter transformer on a single consumer GPU — the highest reported score on any broadcast-domain sign language dataset so far.
 
-📊 [Presentation slides](docs/RSL-News_presentation.pdf) &nbsp;·&nbsp; 📄 [Full documentation](docs/RSL-News_documentation.pdf) (the master's work, all the detail)
+📊 [Presentation slides](../docs/RSL-News_presentation.pdf) &nbsp;·&nbsp; 📄 [Full documentation](../docs/RSL-News_documentation.pdf) (the master's work, all the detail)
 
 ---
 
@@ -133,6 +135,6 @@ A fair number of paths, crop rectangles and channel-specific constants are hardc
 
 ## More detail
 
-The [presentation](docs/RSL-News_presentation.pdf) is the 15-minute version. The [documentation](docs/RSL-News_documentation.pdf) is the real thing: related work, the full collection and alignment pipeline, every ablation, qualitative analysis of the translations, and the failure modes we couldn't fix.
+The [presentation](../docs/RSL-News_presentation.pdf) is the 15-minute version. The [documentation](../docs/RSL-News_documentation.pdf) is the real thing: related work, the full collection and alignment pipeline, every ablation, qualitative analysis of the translations, and the failure modes we couldn't fix.
 
 Radu-Cătălin Micea, *RSL-News: Large-Scale Dataset and Enhanced Lightweight Transformer Model for Gloss-Free Romanian SLT*, master's work, Politehnica University of Timișoara, 2026. Scientific coordinator: Prof. Dr. Habil. Eng. Călin-Adrian Popa.

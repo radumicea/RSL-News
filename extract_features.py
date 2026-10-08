@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""BSL-5k I3D features of the segments in the chosen splits, extracted as for BOBSL:
+"""BSL-5k I3D features of the segments in the chosen splits:
 mp4s/<channel>/.../segment_<i>.mp4 -> dataset/<channel>/.../segment_<i>.bsl5k.npy,
-float16, shape (N, 1024); feature k covers frames [4k, 4k + 16) of the segment.
+float16, shape (N, 1024); feature k covers frames [2k, 2k + 8) of the segment.
 
 The model is the BSL-1K I3D with the 5K-vocabulary weights; the feature is its
 average pool over Mixed_5c, computed with fp16 autocast. Frames are preprocessed as in the
-reference test-time code (bsl1k/datasets/videodataset.py): RGB / 255, shorter
-side resized to 256 (bilinear), centre crop 224, (x - 0.5) / 1.0.
+reference test-time code (bsl1k/datasets/videodataset.py), except for the resize:
+RGB / 255, shorter side resized to 224 (bilinear), centre crop 224, (x - 0.5) / 1.0.
+BOBSL uses 16-frame windows at stride 4 and resizes the shorter side to 256; the
+settings here translate better (FEATURES.md).
 
-Needs ffprobe, a CUDA GPU and
-    pip install torch opencv-python numpy
+Needs ffprobe, a CUDA GPU and the packages of requirements.txt.
 Stop it and run it again to resume: finished segments are skipped."""
 
 import argparse
@@ -32,9 +33,9 @@ ROOT = Path(__file__).resolve().parent
 MP4S, DATASET, LIB = ROOT / 'mp4s', ROOT / 'dataset', ROOT / 'lib' / 'bsl1k'
 CHANNELS = {'prima': 'PrimaTV', 'protv': 'ProTV', 'digi24': 'Digi24'}
 
-WINDOW, STRIDE = 16, 4  # frames; as BOBSL
-RESIZE, CROP = 256, 224
-BATCH = 16  # windows per forward pass; larger batches are not faster on an RTX 3060
+WINDOW, STRIDE = 8, 2  # frames
+RESIZE, CROP = 224, 224  # the crop keeps the whole shorter side
+BATCH = 32  # windows per forward pass (256 frames); larger batches are not faster on an RTX 3060
 
 # downloaded on first use (the bsl1k repository has no license, so it is not copied here)
 FILES = {
@@ -74,7 +75,7 @@ def load_model(device):
 
 
 def segments(splits):
-    """(path relative to mp4s/ and dataset/ without extension, about how many frames)"""
+    """(path relative to mp4s/ and dataset/ without extension, number of frames)"""
     for channel, folder in CHANNELS.items():
         manifest = json.loads((ROOT / 'manifests' / f'{channel}_manifest.json').read_text())
         for item in manifest['items']:
@@ -134,7 +135,7 @@ def features(model, video, device):
         count += 1
         frames.append(frame.to(device, non_blocking=True))
         if len(frames) == WINDOW:
-            windows.append(torch.stack(frames, dim=1))  # (3, 16, 224, 224)
+            windows.append(torch.stack(frames, dim=1))  # (3, WINDOW, 224, 224)
             del frames[:STRIDE]
             if len(windows) == BATCH:
                 run(windows)

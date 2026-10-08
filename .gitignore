@@ -10,10 +10,15 @@ whisperx-align_ro
 runs
 wandb
 thumbs/
-# created by download.sh / extract_poses.sh; distributed separately
+/docs/*.json
+# created by download.sh / extract_poses.py; distributed separately
 /mp4s/
 /logs/
 /dataset/
+/mp4s/
 # MediaPipe models, downloaded on first use
 /lib/mp_holistic_plus/assets/*.task
-/lib/mp_holistic_plus/assets/*.tflite
+# BSL-1K I3D code and weights, downloaded on first use
+/lib/bsl1k/
+# TensorRT engines and models unpacked from the MediaPipe bundles, made on first use
+/lib/mp_holistic_plus/cache/

@@ -1,0 +1,20 @@
+# Everything download.sh, extract_poses.py and extract_features.py need, for a Python 3.10 venv:
+#     python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Pinned: what could change the results or break the code. The rest: latest.
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# download.sh
+requests
+beautifulsoup4
+yt-dlp                              # latest: YouTube changes often; download.sh updates it on every run
+bgutil-ytdlp-pot-provider==2.0.0    # download.sh builds the PO-token server of the same version
+
+# extract_poses.py and extract_features.py
+torch==2.11.0+cu130
+numpy==2.2.6
+opencv-contrib-python==5.0.0.93
+mediapipe==1.0.1
+ai-edge-litert==2.2.0
+tensorrt-cu13==10.15.1.29
+onnx==1.23.1
+zstandard
