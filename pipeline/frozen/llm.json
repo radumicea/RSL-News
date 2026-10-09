@@ -1,0 +1,954 @@
+{
+ "Digi24": {
+  "2021-05-24/0": {
+   "removed": [
+    126
+   ],
+   "reasons": [
+    "WhisperX produced an entire Italian passage (song lyrics), whereas the parallel NeMo chunk is Romanian news — the WhisperX text is a foreign-language hallucination."
+   ]
+  },
+  "2021-07-14/0": {
+   "removed": [
+    64,
+    65,
+    66,
+    67,
+    68
+   ],
+   "reasons": [
+    "Fraza e română cu un nume francez (Champs-Élysées) — nu e halucinație. NeMo însă a transcris numele ca „șanse lise” (gibberish încercând să redea franceza), deci chunk-ul conține halucinație de limbă străină."
+   ]
+  },
+  "2022-01-27/1": {
+   "removed": [
+    181,
+    182,
+    183,
+    184
+   ],
+   "reasons": [
+    "WhisperX output includes full French sentences ('El travaie tutta la jurnée...' and 'El gagnait...') that are not Romanian; NeMo returns only Romanian fragments, so these segments are foreign-language hallucinations."
+   ]
+  },
+  "2023-01-03/1": {
+   "removed": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian and present in WhisperX; NeMo appends non‑Romanian/gibberish tokens ('perdon va musa ape'), indicating a hallucination in the chunk."
+   ]
+  },
+  "2023-04-19/0": {
+   "removed": [
+    66,
+    67,
+    68,
+    69,
+    70
+   ],
+   "reasons": [
+    "Sentence is Romanian with a single foreign token ('держavă'), so not a hallucination; the NeMo chunk is mostly gibberish/non‑Romanian and constitutes a foreign‑language hallucination."
+   ]
+  },
+  "2023-06-07/1": {
+   "removed": [
+    157,
+    158,
+    159,
+    160
+   ],
+   "reasons": [
+    "Fraza conține cuvinte în rusă/ucraineană (Cyrilic + transliterări: 'vseu mebili', 'холодilnice', 'vseu țvete') — nu e română; nu apare în NeMo, deci e halucinație străină în chunk-ul WhisperX."
+   ]
+  },
+  "2023-07-10/0": {
+   "removed": [
+    97,
+    98,
+    99,
+    100
+   ],
+   "reasons": [
+    "WhisperX outputs several full Turkish sentences (not Romanian) at the start of the chunk while the parallel NeMo text is Romanian/gibberish — the Turkish lines are a foreign‑language hallucination."
+   ]
+  },
+  "2023-12-04/1": {
+   "removed": [
+    40,
+    41,
+    42,
+    43,
+    44
+   ],
+   "reasons": [
+    "Fraza conține inserția neașteptată a numelui străin 'Adolf Hitler' într-un context absurd și chunkul include tokeni non‑români/gibberish ('deskwensh', repetiții 'întreg'), deci nu e doar un cuvânt străin ci o halucinație.",
+    "Suspect sentence is valid Romanian with a foreign proper name ('Mühen' ~ München). NeMo chunk, however, begins with non‑Romanian/gibberish tokens ('nume timp rechpaștan timp anwval...'), indicating a foreign-language/gibberish hallucination in the chunk."
+   ]
+  }
+ },
+ "PrimaTV": {
+  "2V0d3K1iR6c/0": {
+   "removed": [
+    86,
+    87
+   ],
+   "reasons": [
+    "The sentence is Romanian with a single foreign token (держavă). The NeMo chunk is gibberish/other-language hallucination and not proper Romanian."
+   ]
+  },
+  "2nniZjHDJM0/0": {
+   "removed": [
+    226
+   ],
+   "reasons": [
+    "WhisperX matches a correct Romanian sentence; NeMo appends non‑Romanian/gibberish tokens (e.g., 'timsam', 'fadimexter', 'jacksne'), indicating a foreign‑language hallucination in the chunk."
+   ]
+  },
+  "CpSpqP8o_h0/0": {
+   "removed": [
+    26
+   ],
+   "reasons": [
+    "NeMo chunk contains non‑Romanian tokens/gibberish (e.g. 'kendine', 'ghiuge', extra words) while WhisperX matches the correct Romanian sentence."
+   ]
+  },
+  "HE8gNq11U5s/0": {
+   "removed": [
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "reasons": [
+    "The excerpt contains an actual Spanish segment ('Están matando a los policías. Por favor, ayúdeme.') — a foreign-language utterance; NeMo output mangles it into Romanian-like gibberish."
+   ]
+  },
+  "JDFq5Dc38iA/0": {
+   "removed": [
+    96
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (only contains the Turkish name Erdoğan). The parallel NeMo chunk contains non‑Romanian/gibberish tokens ('zorlowea boyngea seminar la'), indicating a foreign‑language hallucination in the chunk."
+   ]
+  },
+  "KkZXObJ8uYI/0": {
+   "removed": [
+    330,
+    331,
+    332,
+    333
+   ],
+   "reasons": [
+    "WhisperX output contains full sentences in Hungarian (e.g. 'Miută nemzeti... Magyarorságnak'), i.e. a different language from Romanian; the NeMo chunk only transcribes the Romanian part, indicating these Hungarian lines are a foreign-language hallucination."
+   ]
+  },
+  "WwqEKl7qCE0/0": {
+   "removed": [
+    312,
+    313,
+    314,
+    315,
+    316
+   ],
+   "reasons": [
+    "The suspicious sentence is full Spanish (not Romanian). The WhisperX chunk embeds that Spanish sentence and NeMo produces a garbled, non‑Romanian attempt — a foreign‑language hallucination."
+   ]
+  },
+  "ZgL0M_N1K28/0": {
+   "removed": [
+    317,
+    318,
+    319,
+    320,
+    321
+   ],
+   "reasons": [
+    "Final sentence is mostly Russian/gibberish (Cyrillic 'обсужда' and non‑Romanian tokens), not valid Romanian."
+   ]
+  },
+  "cclxiw8RFIg/0": {
+   "removed": [
+    232,
+    233
+   ],
+   "reasons": [
+    "Fraza e în principal română cu un singur token în chirilic (nu marchează halucinaţie). În schimb, chunk-ul paralel NeMo conţine text ne-românesc/gibberish („brusc bijone...”), deci halucinaţie la nivel de chunk."
+   ]
+  },
+  "gIXUChHT0qc/0": {
+   "removed": [
+    152,
+    153,
+    154
+   ],
+   "reasons": [
+    "Suspect sentence and WhisperX chunk are Romanian (albeit odd); NeMo chunk is unintelligible/foreign-gibberish, indicating a hallucination."
+   ]
+  },
+  "k5n6dJ8_00w/0": {
+   "removed": [
+    92
+   ],
+   "reasons": [
+    "Text is in Ukrainian (Cyrillic) rather than Romanian — a foreign-language sentence, not Romanian with a loanword."
+   ]
+  },
+  "nPhtZL4rMFw/0": {
+   "removed": [
+    28,
+    29,
+    30
+   ],
+   "reasons": [
+    "Full sentence is in Italian (e.g. 'Papa Francesco per il tempo trascorso insieme...'), not Romanian; the chunk mixes Romanian with this entire Italian sentence, indicating a foreign-language hallucination."
+   ]
+  },
+  "qBCW85MltxA/0": {
+   "removed": [
+    249,
+    250
+   ],
+   "reasons": [
+    "Suspect sentences are Romanian (with typos/loanwords like 'octobre'/'Čulacu'), but the NeMo chunk is unintelligible/non‑Romanian gibberish — a clear hallucination."
+   ]
+  },
+  "to6xq3p75Sw/0": {
+   "removed": [
+    53,
+    54,
+    55
+   ],
+   "reasons": [
+    "Partea inițială a propoziției e în italiană („Soprattutto penso...”), iar chunk-ul NeMo este doar în română — WhisperX a introdus conținut străin (italian) halucinant."
+   ]
+  },
+  "uJyaD8hqRrI/0": {
+   "removed": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+   ],
+   "reasons": [
+    "The sentence is predominantly Italian/mixed (e.g. 'Ovviamente, molti... alcuni bambini'), not Romanian; NeMo shows the correct Romanian rendering, so WhisperX produced a foreign-language hallucination."
+   ]
+  },
+  "vjZcjTQTCO4/0": {
+   "removed": [
+    213,
+    214,
+    215,
+    216
+   ],
+   "reasons": [
+    "The sentence is entirely in Italian (e.g. 'Complimenti, siete così bravi...') and is not Romanian; WhisperX appended this full Italian sentence (absent from the NeMo chunk), so it's a foreign-language hallucination."
+   ]
+  },
+  "zJcjo_2dtmM/0": {
+   "removed": [
+    78,
+    79,
+    80
+   ],
+   "reasons": [
+    "WhisperX output contains full Spanish sentences ('Horrible, horrible, mucho calor. Muchísimo calor. Ha sido para mí de las más calurosas que ha pasado.') while NeMo output is Romanian — a clear foreign-language insertion."
+   ]
+  }
+ },
+ "ProTV": {
+  "2021-02-25/3855a0df-90f2-4abe-9720-72a29c68b41a/0": {
+   "removed": [
+    187,
+    188
+   ],
+   "reasons": [
+    "Both sentences are fully in French (not Romanian); the NeMo chunk is garbled/incorrect Romanian attempting to render French audio (gibberish), so this is a foreign‑language hallucination."
+   ]
+  },
+  "2021-03-17/d2f2546b-adbf-4a92-8953-ec031621eefd/0": {
+   "removed": [
+    63,
+    64
+   ],
+   "reasons": [
+    "The suspicious sentence is Portuguese (not Romanian) — a foreign-language utterance. The NeMo chunk is nonsensical/gibberish and does not transcribe Romanian (hallucinated)."
+   ]
+  },
+  "2021-03-19/a9ca1518-a37f-4a9d-bbe5-fe2fd04a572b/0": {
+   "removed": [
+    55
+   ],
+   "reasons": [
+    "Sentence is largely Spanish (e.g. 'reiniciamos la vacunación... la semana que viene, concretamente el miércoles'), not Romanian; NeMo chunk is gibberish/mixed-language rather than valid Romanian."
+   ]
+  },
+  "2021-03-31/67aec431-190c-4314-be48-f0ef1b9aac76/0": {
+   "removed": [
+    216,
+    217,
+    218
+   ],
+   "reasons": [
+    "Primul enunţ este în turcă (maalesef, nüfusumuzun, yüzde, teşkil/teşkileden etc.), nu română; WhisperX chunk începe cu o propoziţie turcă completă înaintea textului român."
+   ]
+  },
+  "2021-04-05/61d4334a-c33d-4f64-982a-f51e1a64067c/0": {
+   "removed": [
+    122,
+    123,
+    124
+   ],
+   "reasons": [
+    "Prima propoziție e în portugheză (nu română) — halucinație în limbă străină; restul chunk-ului este în română."
+   ]
+  },
+  "2021-04-06/3f9e6617-1d26-406e-aa57-bb1919f51d49/1": {
+   "removed": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "reasons": [
+    "The suspicious sentence is a full French sentence ('J'ai dîné...'), not Romanian; the parallel NeMo chunk does not contain this French utterance, indicating a foreign-language hallucination in the WhisperX chunk."
+   ]
+  },
+  "2021-04-21/67577aa5-0b31-46d8-a6be-eaf65c0f02fc/0": {
+   "removed": [
+    199,
+    200
+   ],
+   "reasons": [
+    "Fraza este română (conține nume propriu german 'Lübeck'), dar NeMo chunk introduce secvențe non-românești/gibberish după propoziție (ex. 'haoi neluxăm...'), deci chunk-ul e halucinat."
+   ]
+  },
+  "2021-09-06/707f9136-4ff5-4acf-9a42-5bad9a0e6e5f/0": {
+   "removed": [
+    211,
+    212,
+    213
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian. The NeMo chunk contains non‑Romanian gibberish/hallucinated tokens (e.g. 'moeț setinie', 'moslooved', 'vieschefantică'), indicating a foreign-language/gibberish hallucination."
+   ]
+  },
+  "2021-10-07/bf603743-1775-4208-b648-e9ed32eb8bae/0": {
+   "removed": [
+    235
+   ],
+   "reasons": [
+    "WhisperX output is French (non‑Romanian full sentence), while NeMo chunk is Romanian — indicates a foreign‑language hallucination."
+   ]
+  },
+  "2022-01-17/bbbff871-4f3e-4b47-b1e6-6a8cf2233ae6/0": {
+   "removed": [
+    214,
+    215,
+    216
+   ],
+   "reasons": [
+    "WhisperX appended a full French sentence ('215 contre 58, l'Assemblée nationale...') while NeMo continues in Romanian — the entire foreign-language sentence appears to be a WhisperX hallucination."
+   ]
+  },
+  "2022-02-04/e762210d-c36f-4d9a-b6ae-d1c7b1c3c0eb/0": {
+   "removed": [
+    66,
+    67
+   ],
+   "reasons": [
+    "Suspicious sentence is Romanian (minor typos/proper name). NeMo chunk contains extended non‑Romanian gibberish/foreign-like tokens, indicating a hallucination."
+   ]
+  },
+  "2022-03-15/6d7a3498-5d0f-4f89-881c-0df8ad7560d9/0": {
+   "removed": [
+    28,
+    29,
+    30
+   ],
+   "reasons": [
+    "Suspect sentences are valid Romanian (appear in WhisperX). The NeMo chunk devolves into non‑Romanian/gibberish (English tokens and noise), i.e. a hallucination."
+   ]
+  },
+  "2022-03-18/8951b32d-245e-4665-ba00-2c6df036157b/0": {
+   "removed": [
+    159,
+    160,
+    161
+   ],
+   "reasons": [
+    "Suspect sentence is valid Romanian; WhisperX chunk mixes Spanish tokens/garbled non‑Romanian phrases (desplegat, trasladat, etc.), indicating a foreign‑language hallucination."
+   ]
+  },
+  "2022-05-03/12a79215-1497-4547-a42d-18511d15925b/0": {
+   "removed": [
+    50,
+    51,
+    52
+   ],
+   "reasons": [
+    "Prima propoziție conține segmente slavone/Cyrilice („nad”, „britanschimi”, „он превратит”) — nu e română; chunk-ul conține aceeași inserție străină."
+   ]
+  },
+  "2022-05-20/b4fbe6ff-6005-426c-bb3f-10295bbf9ca8/0": {
+   "removed": [
+    63,
+    64,
+    65
+   ],
+   "reasons": [
+    "Suspect sentence is Romanian with a single Cyrillic token (not a hallucination). The NeMo chunk is largely incoherent/gibberish with many non‑Romanian tokens, indicating a foreign‑language/gibberish hallucination."
+   ]
+  },
+  "2022-06-24/d13107a6-695f-4b90-9acd-b58b51464bd9/0": {
+   "removed": [
+    75,
+    76,
+    77
+   ],
+   "reasons": [
+    "Suspicious sentence is Romanian with a single Cyrillic token ('держavă') not a hallucination; the NeMo chunk is mostly gibberish/Slavic words and not Romanian, i.e. a foreign‑language hallucination."
+   ]
+  },
+  "2022-07-04/ff040cac-caaf-4925-acc4-27887b1572f6/0": {
+   "removed": [
+    204,
+    205,
+    206
+   ],
+   "reasons": [
+    "Sentence is largely Italian/Spanish code-switching (obviamente, comunque, e una, soprattutto, di/spesa) mixed with Romanian particles — not a normal Romanian utterance; WhisperX chunk inserts this foreign-language content while NeMo omits it."
+   ]
+  },
+  "2022-11-14/8b42c2ec-1255-4236-b577-8c5bd6f5cb95/0": {
+   "removed": [
+    101,
+    102,
+    103
+   ],
+   "reasons": [
+    "NeMo chunk appends nonsensical/foreign-looking tokens ('ciukei ciuc le ține') not present in WhisperX; the sentence itself is valid Romanian."
+   ]
+  },
+  "2022-11-29/b0215dda-ac54-4461-86b6-7a9a373d534c/0": {
+   "removed": [
+    87,
+    88,
+    89,
+    90
+   ],
+   "reasons": [
+    "NeMo chunk is non‑Romanian gibberish/foreign tokens (hallucination); WhisperX chunk shows correct Romanian sentences."
+   ]
+  },
+  "2023-01-20/8131aaf9-40af-4194-be88-d2b76b61952b/0": {
+   "removed": [
+    226,
+    227,
+    228
+   ],
+   "reasons": [
+    "Fraza este în întregime în franceză (À compter du 1er septembre...), iar NeMo produce o transcriere gibberish/fonetizată a francezei, deci conține limbă străină."
+   ]
+  },
+  "2023-02-06/4f131e03-83a3-4563-b0e3-18c0d5c3888a/0": {
+   "removed": [
+    57,
+    58,
+    59
+   ],
+   "reasons": [
+    "The sentence is mostly Romanian with a single foreign token ('защита'), so not a hallucination. The full chunk, however, contains multiple non‑Romanian/gibberish segments (Cyrillic token, mangled place names and largely unintelligible NeMo output), indicating a foreign‑language/gibberish hallucination."
+   ]
+  },
+  "2023-02-10/67bd9487-66e8-4da4-9da1-4ee338be72ba/0": {
+   "removed": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "reasons": [
+    "Chunk-ul NeMo conține majoritar texte non‑românești/gibberish și tokeni străini (ex. 'lift anderam', 'nafspeșele soom brian'), nu o transcriere română corectă."
+   ]
+  },
+  "2023-02-21/1fa72e16-a1da-4065-aae9-36c0416cea29/0": {
+   "removed": [
+    232,
+    233,
+    234
+   ],
+   "reasons": [
+    "Chunk contains full German sentences/phrases (e.g. 'Schalke nur für den Gelsenkirchen.', 'Borussia Mönchengladbach'), not just isolated foreign names; NeMo output is garbled/romanized rather than Romanian."
+   ]
+  },
+  "2023-02-22/cc97ca76-30cc-4ba3-a1db-2266fa59bb5b/0": {
+   "removed": [
+    6,
+    7
+   ],
+   "reasons": [
+    "A doua propoziție este în întregime în rusă (Cyrilice) — nu e română cu un termen izolat; WhisperX conține fraza rusă, NeMo nu, deci e o halucinație în altă limbă."
+   ]
+  },
+  "2023-06-27/60b4feb0-5500-4144-93ff-b701e198a239/0": {
+   "removed": [
+    197,
+    198
+   ],
+   "reasons": [
+    "The suspicious sentence is entirely in Russian (Cyrillic). The WhisperX chunk begins with that Russian sentence and NeMo shows a garbled Russian transliteration — foreign-language content, not Romanian."
+   ]
+  },
+  "2023-07-03/1646e9db-df8d-45a8-9527-75c17fb0b4c7/0": {
+   "removed": [
+    84
+   ],
+   "reasons": [
+    "NeMo chunk contains a long sequence of non‑Romanian/English-like gibberish (e.g. 'washingh', 'washington', 'bowling') before the correct Romanian sentence; the sentence itself is valid Romanian."
+   ]
+  },
+  "2023-12-04/b0aa1d2c-5590-4490-a91e-79162d98cbcf/0": {
+   "removed": [
+    165,
+    166,
+    167,
+    168,
+    169,
+    170
+   ],
+   "reasons": [
+    "WhisperX inserted French fragments ('d'abord aux alentours...', 'La fin de ce couple...') that are not Romanian; NeMo shows the correct Romanian content, so this is a foreign-language hallucination."
+   ]
+  },
+  "2023-12-19/98d7f7c1-a07f-4f95-9fca-71ad1eb5c412/0": {
+   "removed": [
+    201,
+    202,
+    203
+   ],
+   "reasons": [
+    "Ultima propoziție e în turcă ('başından', 'seslendiriyoruz'), nu în română — frază străină/hallucinație în chunk."
+   ]
+  },
+  "2023-12-26/26e024eb-f893-4b3e-938d-5a6d56a75730/0": {
+   "removed": [
+    231,
+    232,
+    233,
+    234,
+    235
+   ],
+   "reasons": [
+    "Propoziția e română (conține doar un nume străin). NeMo chunk e gibberish/altă limbă, nu transcriere română corectă (halucinație)."
+   ]
+  },
+  "2024-01-11/8d29c726-57ce-4109-bdd5-35887af0f4d3/0": {
+   "removed": [
+    76
+   ],
+   "reasons": [
+    "Text is predominantly Italian (e.g., 'all'interno della casa', 'appunto', 'militari si sono concentrati'), not Romanian; NeMo output is garbled and not valid Romanian."
+   ]
+  },
+  "2024-03-10/62432344-2/0": {
+   "removed": [
+    180,
+    181,
+    182
+   ],
+   "reasons": [
+    "WhisperX inserted a full French sentence ('La France a un rendez-vous...'), while NeMo and the surrounding content are Romanian — this is a foreign-language hallucination, not a simple loanword or name."
+   ]
+  },
+  "2024-03-16/62433949-2/0": {
+   "removed": [
+    211,
+    212,
+    213
+   ],
+   "reasons": [
+    "Prima propoziție e codificată în poloneză/latină (ex. 'Hic et nunc', 'tak żeby', 'najbliższych tygodniach i miesiącach poprawiła się'), nu română naturală; NeMo e gibberish."
+   ]
+  },
+  "2024-03-23/62435827-2/0": {
+   "removed": [
+    14,
+    15,
+    16,
+    17,
+    18
+   ],
+   "reasons": [
+    "Cyrillic token 'пожarne' (Russian 'пожарные') is inserted into otherwise Romanian sentences — foreign-language tokens hallucinated; NeMo chunk lacks these tokens."
+   ]
+  },
+  "2024-04-10/62440429-2/0": {
+   "removed": [
+    119,
+    120
+   ],
+   "reasons": [
+    "Suspicious sentences are in Italian (not Romanian). The NeMo chunk is incoherent/mixed-language gibberish and not valid Romanian, so both the sentence and the chunk are foreign-language hallucinations."
+   ]
+  },
+  "2024-04-12/62441105-2/0": {
+   "removed": [
+    119,
+    120
+   ],
+   "reasons": [
+    "WhisperX output is Italian (not Romanian); NeMo is garbled—the entire sentence/chunk is in a foreign language, not Romanian."
+   ]
+  },
+  "2024-05-22/62451331-2/0": {
+   "removed": [
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221
+   ],
+   "reasons": [
+    "Una dintre propoziții este în turcă („Hayata geçird...”, „Bu sekilde...”) — întregă frază într-o limbă străină; NeMo a produs transcrieri corupte/gibberish, confirmând halucinație lingvistică.",
+    "Fraza e în mare parte turcă („bölgemizde ve dünyada yaşanan gelişmeler...”), nu română; chunk-urile conțin turcă/gibberish amestecat cu română (NeMo puternic corupt) — hallucinație lingvistică."
+   ]
+  },
+  "2024-06-04/62454509-2/0": {
+   "removed": [
+    186,
+    187,
+    188
+   ],
+   "reasons": [
+    "NeMo chunk is non‑Romanian gibberish/English mix (hallucination); WhisperX chunk contains the correct Romanian sentence with a Spanish proper name."
+   ]
+  },
+  "2024-06-08/62455565-2/0": {
+   "removed": [
+    198,
+    199,
+    200,
+    201,
+    202
+   ],
+   "reasons": [
+    "WhisperX contains a non‑Romanian German phrase ('möglichen Täter, ein Namensschild') with mixed English token — a foreign-language hallucination absent in NeMo."
+   ]
+  },
+  "2024-06-30/62462925-2/0": {
+   "removed": [
+    68,
+    69,
+    70,
+    71
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (contains foreign proper name 'München'). The NeMo chunk shows clear non‑Romanian hallucinations/garbling (e.g. English insertions like 'how chips', split 'euro pean', repeated garbled tokens), so the chunk is a foreign‑language/gibberish hallucination."
+   ]
+  },
+  "2024-07-14/62466891-2/0": {
+   "removed": [
+    42,
+    43
+   ],
+   "reasons": [
+    "Suspect sentence is valid Romanian; NeMo chunk contains unrelated non‑Romanian/gibberish tokens appended (e.g., 'rețari', 'repuvioare', 'tentalo', 'recuperasion', 'ike john diga'), indicating a hallucination."
+   ]
+  },
+  "2024-07-26/62470004-2/0": {
+   "removed": [
+    177,
+    178
+   ],
+   "reasons": [
+    "Segment is entirely French and absent from the parallel NeMo Romanian transcription while the surrounding Romanian matches—likely a hallucinated French insertion."
+   ]
+  },
+  "2024-07-31/62471220-2/0": {
+   "removed": [
+    226,
+    227,
+    228,
+    230,
+    231
+   ],
+   "reasons": [
+    "Chunk contains a clear Spanish insertion ('demostrando un deseo inequívoco de cambio') and other non‑Romanian/gibberish segments; the target Romanian sentence itself is correct.",
+    "NeMo chunk is non‑Romanian gibberish (hallucination); the suspicious sentence and WhisperX chunk are valid Romanian with proper names."
+   ]
+  },
+  "2024-09-02/62480041-2/0": {
+   "removed": [
+    215,
+    216,
+    217
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (contains a proper name). WhisperX chunk contains unrelated English text at the start (foreign-language hallucination)."
+   ]
+  },
+  "2024-09-16/62483268-2/0": {
+   "removed": [
+    50,
+    51
+   ],
+   "reasons": [
+    "Suspicious sentence is Romanian (with a Polish place-name/loan); WhisperX chunk is Romanian. NeMo chunk is non‑Romanian/gibberish (foreign‑language hallucination)."
+   ]
+  },
+  "2024-10-01/62487071-2/0": {
+   "removed": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ],
+   "reasons": [
+    "NeMo chunk appends non‑Romanian/gibberish tokens (e.g. 'jacksoch dunk ... asluf'), a foreign-language/gibberish hallucination; the sentence itself is valid Romanian.",
+    "Sentence is entirely in French (not Romanian). WhisperX chunk begins with that French sentence; NeMo output is garbled/non‑Romanian, indicating a foreign‑language hallucination."
+   ]
+  },
+  "2024-10-22/62492419-2/0": {
+   "removed": [
+    237,
+    238,
+    239,
+    240
+   ],
+   "reasons": [
+    "Phrase is in Italian (e.g. 'C'è...in cima la collina...il rio Brolo...'), not Romanian — the chunk contains a full foreign-language sentence."
+   ]
+  },
+  "2024-11-07/62496705-2/0": {
+   "removed": [
+    45,
+    46,
+    47,
+    48
+   ],
+   "reasons": [
+    "WhisperX includes full sentences in Hungarian ('Hatalmas...','Ez mindenkinek...'), not Romanian; NeMo chunk contains different Romanian content, confirming a foreign-language hallucination."
+   ]
+  },
+  "2024-11-30/62501999-2/0": {
+   "removed": [
+    217,
+    218,
+    219,
+    229,
+    230
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (only a foreign proper name 'Köln'). The NeMo chunk contains foreign/gibberish tokens (e.g. 'new york foreth un ocendon') not Romanian — a language/gibberish hallucination.",
+    "Fraza e în esență română cu un singur termen francez ('la forêt') folosit ca explicație, deci nu e halucinație lingvistică; însă chunk‑ul (NeMo) conține secvențe non‑române/gibberish ('reclemen metodiu jonglever...'), indicând o transcriere halucinată."
+   ]
+  },
+  "2025-02-23/62522032-2/0": {
+   "removed": [
+    67,
+    68,
+    69
+   ],
+   "reasons": [
+    "WhisperX chunk is coherent Romanian, but NeMo diverges into non‑Romanian/English‑like gibberish (e.g. \"etsan powth... how gray its...\"), indicating a foreign‑language hallucination in the NeMo chunk."
+   ]
+  },
+  "2025-03-07/62525652-2/0": {
+   "removed": [
+    77,
+    78
+   ],
+   "reasons": [
+    "Fraza e integral în franceză („C'est à dire...”), nu în română; chunk conține propoziție în franceză, iar NeMo a produs text gibberish indicând conținut străin."
+   ]
+  },
+  "2025-03-23/62530069-2/0": {
+   "removed": [
+    201,
+    202,
+    203,
+    204,
+    211,
+    212
+   ],
+   "reasons": [
+    "The sentence is entirely in Italian (not Romanian). The NeMo chunk is incoherent/gibberish, indicating a foreign-language hallucination.",
+    "The sentence is predominantly Italian (with some Romanian tokens) rather than natural Romanian — a foreign-language hallucination; the WhisperX chunk contains the same Italian sentence."
+   ]
+  },
+  "2025-03-26/62530779-2/0": {
+   "removed": [
+    21,
+    22
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (only contains foreign toponyms). However the NeMo chunk contains non‑Romanian/gibberish tokens ('și țulas sau un bica fundan mircea fundake' etc.), indicating a hallucination in the chunk."
+   ]
+  },
+  "2025-04-06/62533371-2/0": {
+   "removed": [
+    207,
+    208,
+    209,
+    210
+   ],
+   "reasons": [
+    "Primele propoziții conțin segmente în maghiară/gibberish ('Nagyon...', 'elősor') și nu sunt română; NeMo arată transcrierea corectă în română, deci WhisperX a halucinat limbă străină la început."
+   ]
+  },
+  "2025-04-17/62536079-2/0": {
+   "removed": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205
+   ],
+   "reasons": [
+    "Suspicious sentence is valid Romanian (proper name Șefcović and acronym EU), not a foreign-language hallucination. The NeMo chunk is gibberish/foreign-language hallucination (nonsensical tokens, not Romanian)."
+   ]
+  },
+  "2025-04-21/62536965-2/0": {
+   "removed": [
+    191,
+    192,
+    193,
+    194,
+    195
+   ],
+   "reasons": [
+    "Fraza suspectă este integral în spaniolă (nu română). Chunk-ul conține acea propoziție în spaniolă și NeMo o redă eronat/gibberish, deci este o halucinație în limbă străină."
+   ]
+  },
+  "2025-04-24/62537758-2/0": {
+   "removed": [
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190
+   ],
+   "reasons": [
+    "The sentence is a full Spanish question ('Quanto años tienes?')—a foreign-language utterance; the rest of the chunk is Romanian with occasional Spanish terms."
+   ]
+  },
+  "2025-04-29/62539338-2/0": {
+   "removed": [
+    79,
+    80,
+    81
+   ],
+   "reasons": [
+    "The suspicious sentences are in Spanish (not Romanian); the WhisperX chunk contains full Spanish sentences and the NeMo chunk is garbled/mixed — this is foreign-language content/gibberish, not Romanian."
+   ]
+  },
+  "2025-05-16/62544131-2/0": {
+   "removed": [
+    36,
+    37,
+    38
+   ],
+   "reasons": [
+    "Suspicious sentences are full French (not Romanian) — chunk contains multiple French phrases and NeMo shows garbled/Romanianized transcription, indicating foreign-language content."
+   ]
+  },
+  "2025-06-02/62548556-2/0": {
+   "removed": [
+    178,
+    179
+   ],
+   "reasons": [
+    "The sentence is in Slavic/Polish-like terms (e.g., 'pożyczki', 'kibicowske'), not Romanian; the WhisperX chunk embeds this foreign phrase into Romanian and the NeMo chunk contains further non-Romanian/gibberish tokens."
+   ]
+  },
+  "2025-06-17/62552963-2/0": {
+   "removed": [
+    101,
+    102
+   ],
+   "reasons": [
+    "Primul enunț e în mare parte în turcă (ex.: 'saldıran', 'her ülke', 'değil', 'Gazze'), deci este o halucinație în limbă străină; chunk-ul conține această propoziție turcă urmată de o propoziție română validă."
+   ]
+  },
+  "2025-07-09/62558779-2/0": {
+   "removed": [
+    206,
+    207,
+    208,
+    209
+   ],
+   "reasons": [
+    "The entire WhisperX chunk is in French (e.g. 'Une fois que j'ai ouvert le portails', 'Sur les hauteurs de Narbonne'), not Romanian; NeMo chunk is empty—this is a foreign‑language hallucination."
+   ]
+  },
+  "2025-07-12/62559587-2/0": {
+   "removed": [
+    215,
+    216,
+    217,
+    218,
+    219
+   ],
+   "reasons": [
+    "WhisperX chunk contains multiple full sentences in Norwegian/Swedish (not Romanian) — a language-level hallucination; NeMo chunk is Romanian and does not match."
+   ]
+  },
+  "2025-07-17/62560696-2/0": {
+   "removed": [
+    189,
+    190,
+    191,
+    192,
+    193
+   ],
+   "reasons": [
+    "The sentences are entirely in French (not Romanian). WhisperX transcribes clear French; NeMo output is unintelligible/Romanian-like gibberish trying to render the French — a foreign-language utterance and a hallucinated/garbled chunk."
+   ]
+  },
+  "2025-07-21/62561412-2/0": {
+   "removed": [
+    211,
+    212,
+    213,
+    214
+   ],
+   "reasons": [
+    "Suspect sentence is valid Romanian (Spanish name is fine); NeMo chunk is non‑Romanian gibberish/foreign hallucination while WhisperX remains Romanian."
+   ]
+  },
+  "2025-10-10/62581690-2/0": {
+   "removed": [
+    202
+   ],
+   "reasons": [
+    "NeMo chunk injects non‑Romanian/gibberish tokens ('nawy willipson') and mis-transcribes the name (Jürgen → yorghe), indicating a hallucination."
+   ]
+  },
+  "2025-10-17/62583747-2/0": {
+   "removed": [
+    180,
+    181,
+    182
+   ],
+   "reasons": [
+    "Fraza e română (cu un nume francez). NeMo chunk conține la început tokeni gibberish/non‑româniți (hallucinație), deși partea finală e corectă."
+   ]
+  }
+ }
+}

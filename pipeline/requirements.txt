@@ -1,17 +1,35 @@
-beautifulsoup4==4.14.2
-face_recognition==1.3.0
-matplotlib==3.10.7
-numpy==1.26.4
-opencv-python==4.10.0.84
-peft==0.17.1
-Pillow==12.0.0
-Requests==2.32.5
-sacrebleu==2.5.1
-torch==2.8.0
-torchvision==0.23.0
-tqdm==4.67.1
-transformers==4.51.3
-wandb==0.23.0
-whisperx==3.7.4
-yt_dlp==2025.11.12
-zstandard==0.25.0
+# The pipeline's environment, for Python 3.10. It is separate from ../requirements.txt: WhisperX
+# and NeMo need torch 2.8.
+#     python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt
+#     .venv/bin/pip install --no-deps facenet-pytorch==2.6.0   # 3_verify's face check; its own pins predate torch 2.8
+#     .venv/bin/pip uninstall -y onnxruntime && .venv/bin/pip install --no-deps --force-reinstall onnxruntime-gpu==1.22.0
+#                                       # 2_segment's pose check on the GPU: faster-whisper's CPU build would hide it
+# Pinned: what the original run used, where it shapes the results. The rest: latest.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# 1_find and the downloads
+requests
+beautifulsoup4
+yt-dlp
+bgutil-ytdlp-pot-provider==2.0.0     # YouTube's PO tokens, with the server download.sh builds
+
+# 2_segment and 3_verify
+torch==2.8.0+cu128
+torchvision==0.23.0+cu128
+torchaudio==2.8.0+cu128
+numpy==2.2.6
+opencv-python==4.13.0.92
+dlib==20.0.0                         # built from source: needs cmake and a C++ compiler
+face-recognition==1.3.0
+setuptools<81                        # face-recognition's models need pkg_resources, which setuptools 81 removed
+rtmlib==0.0.13
+
+# 4_labels
+whisperx==3.8.1
+nemo-toolkit[asr]==2.6.2
+openai==2.21.0
+sentencepiece==0.2.1
+soundfile
+zstandard
+
+notebook

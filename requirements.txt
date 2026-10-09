@@ -13,8 +13,5 @@ bgutil-ytdlp-pot-provider==2.0.0    # download.sh builds the PO-token server of 
 torch==2.11.0+cu130
 numpy==2.2.6
 opencv-contrib-python==5.0.0.93
-mediapipe==1.0.1
-ai-edge-litert==2.2.0
-tensorrt-cu13==10.15.1.29
-onnx==1.23.1
 zstandard
+mp-holistic-plus @ git+https://github.com/radumicea/mp-holistic-plus@v1.0.0   # the landmarks; pins its MediaPipe, LiteRT, TensorRT and ONNX

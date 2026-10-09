@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Landmarks of every segment: mp4s/<channel>/.../segment_<i>.mp4 ->
 dataset/<channel>/.../segment_<i>.pose.npz (body, hands) and segment_<i>.face.npz
-(face mesh), one entry per video frame, made by lib/mp_holistic_plus (the arrays are
+(face mesh), one entry per video frame, made by mp_holistic_plus (the arrays are
 described in its README.md). Read them with load() below:
 
     from extract_poses import load
@@ -26,12 +26,10 @@ from pathlib import Path
 import cv2
 import numpy as np
 import zstandard
+from mp_holistic_plus import common   # numpy and OpenCV only; the GPU parts load in the workers
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / 'lib'))
-
 MP4S, DATASET = ROOT / 'mp4s', ROOT / 'dataset'
-from mp_holistic_plus import common  # noqa: E402  (numpy and OpenCV only; the GPU parts load in the workers)
 
 FACE = ('face_xyz', 'face_ok')  # these go to the .face.npz
 CHUNK = 256  # frames compressed together; a clip only decodes the chunks it touches

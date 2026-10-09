@@ -1,0 +1,5035 @@
+{
+  "description": "Broadcasts that were in the source lists but are not in RSL-News, because they could not be recovered from the public archives; each keeps its manifest entry and the reason. Taken from the download manifests of Sep 28-29, 2026. Segment ranges are [start, end) with end exclusive, as in manifests/ (the original lists stored PrimaTV and ProTV ends inclusive).",
+  "PrimaTV": [
+    {
+      "id": "QUDCuFJi88c",
+      "url": "https://www.youtube.com/watch?v=QUDCuFJi88c",
+      "interpreter": "interpreter_03",
+      "source_height": null,
+      "crop": null,
+      "segments": [],
+      "unrecoverable": true,
+      "reason": "video deleted (YouTube: Video unavailable)"
+    },
+    {
+      "id": "UAYHmipVDvg",
+      "url": "https://www.youtube.com/watch?v=UAYHmipVDvg",
+      "interpreter": "interpreter_03",
+      "source_height": null,
+      "crop": null,
+      "segments": [],
+      "unrecoverable": true,
+      "reason": "YouTube serves this video only at 360p now; the dataset segment was cropped from its 720p rendition, which is no longer available"
+    }
+  ],
+  "ProTV": [
+    {
+      "date": "2023-12-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/87336-stirile-pro-tv-07-00-24-decembrie-2023",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1097,
+          "end": 46284
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-01",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78860,
+          "end": 125111
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-04",
+      "name": "video_0.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1153,
+          "end": 52606
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2024-03-04",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71681,
+          "end": 117218
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-03-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73095,
+          "end": 117960
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-06",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80674,
+          "end": 129518
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-08",
+      "name": "video_0.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 79572,
+          "end": 128744
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2024-03-08",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80343,
+          "end": 124768
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-09",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1235,
+          "end": 45672
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-10",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1566,
+          "end": 49018
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-03-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69385,
+          "end": 114846
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-03-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/91557-stirile-pro-tv-06-00-12-martie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69385,
+          "end": 114846
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-13",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/91568-stirile-pro-tv-06-00-13-martie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77704,
+          "end": 122396
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-13",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/91568-stirile-pro-tv-06-00-13-martie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77704,
+          "end": 122396
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-15",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/91591-stirile-pro-tv-06-00-15-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75412,
+          "end": 122952
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/91599-stirile-pro-tv-07-00-16-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1037,
+          "end": 50179
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92091-stirile-pro-tv-06-00-18-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71977,
+          "end": 117515
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92098-stirile-pro-tv-06-00-19-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74083,
+          "end": 122731
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92105-stirile-pro-tv-06-00-20-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78464,
+          "end": 125257
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92112-stirile-pro-tv-06-00-21-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75823,
+          "end": 126334
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-22",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78991,
+          "end": 127019
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "no morning episode in archive"
+    },
+    {
+      "date": "2024-03-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92126-stirile-pro-tv-07-00-23-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1290,
+          "end": 54763
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92134-stirile-pro-tv-07-00-24-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1213,
+          "end": 51923
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92377-stirile-pro-tv-06-00-25-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80549,
+          "end": 125806
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92386-stirile-pro-tv-06-00-26-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73086,
+          "end": 120640
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-27",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92396-stirile-pro-tv-06-00-27-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 81459,
+          "end": 129819
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92406-stirile-pro-tv-06-00-28-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74473,
+          "end": 122312
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-29",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92416-stirile-pro-tv-06-00-29-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 83181,
+          "end": 130137
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-03-31",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92432-stirile-pro-tv-07-00-31-martie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1150,
+          "end": 47461
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92424-stirile-pro-tv-07-00-30-martie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76367,
+          "end": 123766
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-02",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92814-stirile-pro-tv-06-00-2-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 79031,
+          "end": 125775
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92823-stirile-pro-tv-06-00-3-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80287,
+          "end": 128350
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92832-stirile-pro-tv-06-00-4-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80042,
+          "end": 125844
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76784,
+          "end": 127818
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-04-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93202-stirile-pro-tv-06-00-8-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76317,
+          "end": 120598
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93210-stirile-pro-tv-06-00-9-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74464,
+          "end": 122593
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-10",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/92856-stirile-pro-tv-07-00-7-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73539,
+          "end": 119579
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-11",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93230-stirile-pro-tv-06-00-11-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78625,
+          "end": 124534
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93240-stirile-pro-tv-06-00-12-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73539,
+          "end": 119579
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93255-stirile-pro-tv-07-00-14-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 774,
+          "end": 44434
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-15",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93248-stirile-pro-tv-07-00-13-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1285,
+          "end": 43021
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-15",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93707-stirile-pro-tv-06-00-15-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68263,
+          "end": 115267
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-15",
+      "name": "video_2.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93707-stirile-pro-tv-06-00-15-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68263,
+          "end": 115267
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93713-stirile-pro-tv-06-00-16-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70545,
+          "end": 116877
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-17",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93720-stirile-pro-tv-06-00-17-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74346,
+          "end": 107135
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93727-stirile-pro-tv-06-00-18-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68001,
+          "end": 115021
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93734-stirile-pro-tv-06-00-19-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76524,
+          "end": 118131
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93741-stirile-pro-tv-07-00-20-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1150,
+          "end": 46800
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93748-stirile-pro-tv-07-00-21-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1139,
+          "end": 46736
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94020-stirile-pro-tv-06-00-23-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74699,
+          "end": 119038
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94030-stirile-pro-tv-06-00-24-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71419,
+          "end": 117800
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94040-stirile-pro-tv-06-00-25-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71853,
+          "end": 114364
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94051-stirile-pro-tv-06-00-26-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72774,
+          "end": 117888
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-27",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94059-stirile-pro-tv-07-00-27-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1330,
+          "end": 46281
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-27",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94059-stirile-pro-tv-07-00-27-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1330,
+          "end": 46281
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94065-stirile-pro-tv-07-00-28-aprilie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1260,
+          "end": 45755
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-29",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94589-stirile-pro-tv-06-00-29-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71817,
+          "end": 116913
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-04-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94596-stirile-pro-tv-06-00-30-aprilie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65297,
+          "end": 109706
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94605-stirile-pro-tv-06-00-1-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65690,
+          "end": 111322
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65797,
+          "end": 108439
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-05-03",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70347,
+          "end": 117325
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-05-04",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 930,
+          "end": 34013
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-05-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1318,
+          "end": 39583
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-05-06",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94926-stirile-pro-tv-07-00-6-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1213,
+          "end": 47535
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-07",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94931-stirile-pro-tv-06-00-7-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65295,
+          "end": 111965
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94938-stirile-pro-tv-06-00-8-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69523,
+          "end": 112172
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94946-stirile-pro-tv-06-00-9-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63652,
+          "end": 109036
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-10",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94954-stirile-pro-tv-06-00-10-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65656,
+          "end": 110689
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-11",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/94961-stirile-pro-tv-07-00-11-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1280,
+          "end": 45918
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95350-stirile-pro-tv-06-00-14-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65766,
+          "end": 111144
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-15",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95357-stirile-pro-tv-06-00-15-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66561,
+          "end": 111523
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95364-stirile-pro-tv-06-00-16-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68068,
+          "end": 111811
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-17",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95344-stirile-pro-tv-06-00-13-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65191,
+          "end": 114892
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95384-stirile-pro-tv-07-00-19-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 991,
+          "end": 44829
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95709-stirile-pro-tv-06-00-20-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68576,
+          "end": 114317
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95718-stirile-pro-tv-06-00-21-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68376,
+          "end": 115965
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-22",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95728-stirile-pro-tv-06-00-22-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64635,
+          "end": 113085
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95738-stirile-pro-tv-06-00-23-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67349,
+          "end": 112100
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95747-stirile-pro-tv-06-00-24-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72004,
+          "end": 116719
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95757-stirile-pro-tv-07-00-25-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1119,
+          "end": 40458
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/95765-stirile-pro-tv-07-00-26-mai-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1233,
+          "end": 38521
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96223-stirile-pro-tv-06-00-28-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72938,
+          "end": 117694
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-29",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96230-stirile-pro-tv-06-00-29-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70086,
+          "end": 116272
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-05-29",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68196,
+          "end": 114183
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "no morning episode in archive"
+    },
+    {
+      "date": "2024-05-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96238-stirile-pro-tv-06-00-30-mai-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69940,
+          "end": 115830
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-02",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96261-stirile-pro-tv-07-00-2-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1159,
+          "end": 44638
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96510-stirile-pro-tv-06-00-3-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64428,
+          "end": 110795
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96519-stirile-pro-tv-06-00-4-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70673,
+          "end": 118260
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-05",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96528-stirile-pro-tv-06-00-5-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66140,
+          "end": 111779
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-06",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96537-stirile-pro-tv-06-00-6-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69926,
+          "end": 113053
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-07",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96546-stirile-pro-tv-06-00-7-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69132,
+          "end": 114741
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96554-stirile-pro-tv-07-00-8-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1296,
+          "end": 44943
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/96562-stirile-pro-tv",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 327,
+          "end": 43807
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-10",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70441,
+          "end": 114128
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-06-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66272,
+          "end": 113758
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-06-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97074-stirile-pro-tv-06-00-12-iunie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64521,
+          "end": 112702
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-13",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97080-stirile-pro-tv-06-00-13-iunie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64689,
+          "end": 108633
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97086-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66624,
+          "end": 115989
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-15",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97099-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64689,
+          "end": 108633
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-17",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97114-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1177,
+          "end": 38728
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-17",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97459-stirile-pro-tv-06-00-17-iunie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65427,
+          "end": 108443
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97482-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66984,
+          "end": 113889
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97625-stirile-pro-tv-06-00-19-iunie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63119,
+          "end": 108339
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97493-stirile-pro-tv-06-00-20-iunie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64992,
+          "end": 112872
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97504-stirile-pro-tv",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65002,
+          "end": 111641
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97524-stirile-pro-tv-07-00-23-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1353,
+          "end": 46485
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97741-stirile-pro-tv-06-00-24-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67300,
+          "end": 112123
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97753-stirile-pro-tv-06-00-25-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66617,
+          "end": 113551
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97766-stirile-pro-tv-06-00-26-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63935,
+          "end": 109845
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-27",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97780-stirile-pro-tv-06-00-27-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63719,
+          "end": 107529
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97790-stirile-pro-tv-06-00-28-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68206,
+          "end": 114923
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-29",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97798-stirile-pro-tv-07-00-29-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1297,
+          "end": 42559
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-06-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97807-stirile-pro-tv-07-00-30-iunie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1250,
+          "end": 47136
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98105-stirile-pro-tv-06-00-1-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65780,
+          "end": 106049
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-02",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98113-stirile-pro-tv-06-00-2-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64720,
+          "end": 110588
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98122-stirile-pro-tv-06-00-3-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65304,
+          "end": 109138
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98129-stirile-pro-tv-06-00-4-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64097,
+          "end": 108476
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-05",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98136-stirile-pro-tv-06-00-5-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66699,
+          "end": 111411
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98154-stirile-pro-tv-07-00-7-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1161,
+          "end": 45058
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98510-stirile-pro-tv-06-00-9-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64852,
+          "end": 110280
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-11",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98526-stirile-pro-tv-06-00-11-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66940,
+          "end": 112394
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98532-stirile-pro-tv-06-00-12-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70761,
+          "end": 116005
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-13",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98539-stirile-pro-tv-07-00-13-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1239,
+          "end": 46457
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98544-stirile-pro-tv-07-00-14-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 650,
+          "end": 51091
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-15",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98727-stirile-pro-tv-06-00-15-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65624,
+          "end": 110291
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98736-stirile-pro-tv-06-00-16-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68634,
+          "end": 113887
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-17",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98745-stirile-pro-tv-06-00-17-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67114,
+          "end": 112609
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98754-stirile-pro-tv-06-00-18-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68465,
+          "end": 113380
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98777-stirile-pro-tv-07-00-21-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1338,
+          "end": 45334
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-22",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98984-stirile-pro-tv-06-00-22-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65682,
+          "end": 108248
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-22",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98763-stirile-pro-tv-06-00-19-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66982,
+          "end": 113578
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/98993-stirile-pro-tv-06-00-23-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63645,
+          "end": 110035
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99004-stirile-pro-tv-06-00-24-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66091,
+          "end": 107607
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99013-stirile-pro-tv-06-00-25-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66271,
+          "end": 110641
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99022-stirile-pro-tv-06-00-26-iulie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70025,
+          "end": 114076
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99035-stirile-pro-tv-07-00-28-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1275,
+          "end": 37190
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-29",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99331-stirile-pro-tv-06-00-29-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71601,
+          "end": 119329
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99341-stirile-pro-tv-06-00-30-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76443,
+          "end": 124277
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-07-31",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99351-stirile-pro-tv-06-00-31-iulie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75677,
+          "end": 123505
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99361-stirile-pro-tv-06-00-1-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68521,
+          "end": 115973
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-02",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99369-stirile-pro-tv-06-00-2-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78016,
+          "end": 123527
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99378-stirile-pro-tv-07-00-3-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1308,
+          "end": 45105
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93143-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1175,
+          "end": 48122
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-05",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93147-stirile-pro-tv-06-00-5-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65678,
+          "end": 111135
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-06",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99565-stirile-pro-tv-06-00-6-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67664,
+          "end": 113176
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-07",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99810-stirile-pro-tv-06-00-7-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68165,
+          "end": 111223
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93168-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70917,
+          "end": 111019
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93175-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69519,
+          "end": 116549
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-10",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93181-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1385,
+          "end": 45902
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-12",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99890-stirile-pro-tv-06-00-12-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65681,
+          "end": 108342
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-12",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/93186-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1295,
+          "end": 44500
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-13",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99898-stirile-pro-tv-06-00-13-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71677,
+          "end": 117076
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99907-stirile-pro-tv-06-00-14-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63440,
+          "end": 108830
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-15",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99915-stirile-pro-tv-06-00-15-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 69030,
+          "end": 111284
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99924-stirile-pro-tv-06-00-16-august-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71166,
+          "end": 114425
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-17",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99932-stirile-pro-tv-07-00-17-august-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1230,
+          "end": 48344
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/99940-stirile-pro-tv-07-00-18-august-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1375,
+          "end": 47519
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100324-stirile-pro-tv-06-00-19-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72466,
+          "end": 118432
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100332-stirile-pro-tv-06-00-20-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73469,
+          "end": 119806
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100342-stirile-pro-tv-06-00-21-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73902,
+          "end": 121552
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-22",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100350-stirile-pro-tv-06-00-22-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73011,
+          "end": 118285
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100358-stirile-pro-tv-13-00-23-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75331,
+          "end": 121294
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100366-stirile-pro-tv-07-00-24-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1108,
+          "end": 44393
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100372-stirile-pro-tv-07-00-25-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1154,
+          "end": 47866
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-26",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100485-stirile-pro-tv-13-00-26-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75090,
+          "end": 120048
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-27",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100492-stirile-pro-tv-06-00-27-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73273,
+          "end": 120320
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-28",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100499-stirile-pro-tv-06-00-28-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 75534,
+          "end": 122259
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-29",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100506-stirile-pro-tv-06-00-29-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71283,
+          "end": 116020
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100513-stirile-pro-tv-06-00-30-august-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78715,
+          "end": 129979
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-08-31",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100520-stirile-pro-tv-07-00-31-august-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1325,
+          "end": 45449
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100525-stirile-pro-tv-07-00-1-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1300,
+          "end": 53425
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-02",
+      "name": "video_0.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100837-stirile-pro-tv-06-00-2-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73155,
+          "end": 115014
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-02",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67528,
+          "end": 112265
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "no morning episode in archive"
+    },
+    {
+      "date": "2024-09-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100843-stirile-pro-tv-06-00-3-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65803,
+          "end": 113098
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100849-stirile-pro-tv-06-00-4-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70630,
+          "end": 115347
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-05",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100855-stirile-pro-tv-06-00-5-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73279,
+          "end": 118807
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-06",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100861-stirile-pro-tv-06-00-6-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73822,
+          "end": 117972
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-08",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/100873-stirile-pro-tv-07-00-8-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1191,
+          "end": 41735
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-09",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101048-stirile-pro-tv-06-00-9-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65570,
+          "end": 110721
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-10",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97272-stirile-pro-tv-06-00-16-august-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 61419,
+          "end": 104618
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-11",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97283-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65511,
+          "end": 108891
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97294-stirile-pro-tv-06-00-12-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64693,
+          "end": 110236
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-13",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97306-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64933,
+          "end": 109503
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/97316-stirile-pro-tv",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1285,
+          "end": 47674
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-16",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101291-stirile-pro-tv-06-00-16-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64903,
+          "end": 109271
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101308-stirile-pro-tv-06-00-18-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63573,
+          "end": 110648
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-19",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101317-stirile-pro-tv-06-00-19-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64904,
+          "end": 103661
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-20",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101326-stirile-pro-tv-06-00-20-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64462,
+          "end": 109148
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-21",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101334-stirile-pro-tv-07-00-21-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1142,
+          "end": 46146
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101632-stirile-pro-tv-06-00-23-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66015,
+          "end": 109067
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101641-stirile-pro-tv-06-00-24-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64473,
+          "end": 108459
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-25",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101651-stirile-pro-tv-06-00-25-septembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64858,
+          "end": 110359
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-27",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101669-stirile-pro-tv-06-00-27-septembrie2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64617,
+          "end": 108975
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-09-28",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1159,
+          "end": 40311
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-09-29",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1018,
+          "end": 47726
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-09-30",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101948-stirile-pro-tv-06-00-30-septembrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66031,
+          "end": 113939
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101956-stirile-pro-tv-06-00-1-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63297,
+          "end": 110082
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 62757,
+          "end": 108454
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-10-03",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101974-stirile-pro-tv-06-00-4-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64455,
+          "end": 109810
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-04",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/101982-stirile-pro-tv-06-00-4-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66582,
+          "end": 109316
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1142,
+          "end": 45827
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-07",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/102353-stirile-pro-tv-06-00-7-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65243,
+          "end": 111245
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-08",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65271,
+          "end": 112102
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-09",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65219,
+          "end": 112335
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-10",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67308,
+          "end": 114958
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64917,
+          "end": 109825
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-12",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/102386-stirile-pro-tv-07-00-12-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1242,
+          "end": 45116
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-13",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/102392-stirile-pro-tv-07-00-13-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1128,
+          "end": 41736
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-14",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/102511-stirile-pro-tv-06-00-14-octombrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65680,
+          "end": 112102
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-15",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66105,
+          "end": 109104
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-17",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66503,
+          "end": 111852
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-18",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/102552-stirile-pro-tv-06-00-18-octombrie-2024",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66233,
+          "end": 113234
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-10-20",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1332,
+          "end": 40394
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-21",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 63813,
+          "end": 108314
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-22",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65187,
+          "end": 110697
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-10-23",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65375,
+          "end": 107919
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-24",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64939,
+          "end": 111315
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-10-25",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68041,
+          "end": 115226
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-26",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1522,
+          "end": 46542
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-10-27",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1191,
+          "end": 44859
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-10-29",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65852,
+          "end": 110994
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-10-30",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72154,
+          "end": 119456
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-01",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77013,
+          "end": 121820
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1256,
+          "end": 44019
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-04",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66271,
+          "end": 110642
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66164,
+          "end": 111725
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-06",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64453,
+          "end": 113591
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64722,
+          "end": 109591
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-08",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65339,
+          "end": 110197
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67270,
+          "end": 108699
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-12",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66168,
+          "end": 112667
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-13",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67737,
+          "end": 108965
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-14",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64699,
+          "end": 111705
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-15",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66049,
+          "end": 112302
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-17",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1356,
+          "end": 45457
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-18",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65686,
+          "end": 112056
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2024-11-19",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66639,
+          "end": 105594
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-11-23",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/104021-stirile-pro-tv-07-00-23-noiembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1190,
+          "end": 44552
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-12-01",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/104325-stirile-pro-tv-07-00-1-decembrie-2024",
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1725,
+          "end": 54941
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2024-12-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1166,
+          "end": 45512
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-12-08",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1526,
+          "end": 45546
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-12-17",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65710,
+          "end": 110297
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-12-24",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78257,
+          "end": 124961
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2024-12-28",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1483,
+          "end": 50949
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2024-12-29",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1314,
+          "end": 49947
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 81684,
+          "end": 129122
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-08",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 80414,
+          "end": 129057
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-17",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78838,
+          "end": 124419
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-18",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1266,
+          "end": 45635
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-19",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1217,
+          "end": 52206
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-01-29",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73707,
+          "end": 124526
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-02-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70624,
+          "end": 118395
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-02-09",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1210,
+          "end": 44188
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-02-18",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66080,
+          "end": 114268
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-03-01",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1435,
+          "end": 47398
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-03-10",
+      "name": "video_0.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74106,
+          "end": 114827
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2025-03-10",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72973,
+          "end": 113378
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-03-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66089,
+          "end": 110541
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-03-16",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1282,
+          "end": 42712
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-03-22",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1108,
+          "end": 44732
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-03-30",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1301,
+          "end": 47645
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-01",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 79972,
+          "end": 128034
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74373,
+          "end": 120271
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-10",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65637,
+          "end": 112059
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66280,
+          "end": 112988
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-16",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65710,
+          "end": 110243
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-21",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1179,
+          "end": 44971
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-22",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70229,
+          "end": 117744
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-23",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72365,
+          "end": 118353
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-04-24",
+      "name": "video.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/113346-stirile-pro-tv-06-00-24-aprilie-2025",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72583,
+          "end": 118827
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2025-05-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76493,
+          "end": 120481
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-05-04",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1500,
+          "end": 45049
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-05-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 74077,
+          "end": 118206
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-05-15",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68878,
+          "end": 114268
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-05-18",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 408,
+          "end": 46866
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-05-23",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67615,
+          "end": 115004
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-02",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77543,
+          "end": 126030
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-03",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66962,
+          "end": 112482
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-08",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1106,
+          "end": 51393
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-10",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 65677,
+          "end": 112071
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-12",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64750,
+          "end": 111224
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-13",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 70953,
+          "end": 102368
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-23",
+      "name": "video_0.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1268,
+          "end": 45831
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-06-23",
+      "name": "video_1.mp4",
+      "url": "https://voyo.protv.ro/emisiuni/19-stirile-pro-tv/episodul/116295-stirile-pro-tv-07-00-21-iunie-2025",
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1184,
+          "end": 45516
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "episode page has no playable video"
+    },
+    {
+      "date": "2025-06-23",
+      "name": "video_2.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72061,
+          "end": 116155
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-25",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71078,
+          "end": 117753
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-06-26",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66447,
+          "end": 109589
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-03",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67575,
+          "end": 114019
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-07-04",
+      "name": "video_0.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 71079,
+          "end": 112981
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-04",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68710,
+          "end": 115420
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-07-07",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66495,
+          "end": 112734
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-14",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68314,
+          "end": 113300
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-16",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66631,
+          "end": 114112
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-17",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 64021,
+          "end": 111481
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-07-20",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1192,
+          "end": 43659
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-22",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1348,
+          "end": 45835
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-07-24",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66385,
+          "end": 113052
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-25",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 72714,
+          "end": 119201
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-28",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 81853,
+          "end": 126692
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-07-29",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77620,
+          "end": 130045
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-07-31",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 77498,
+          "end": 126578
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-08-04",
+      "name": "video_1.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1230,
+          "end": 51310
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "the original broadcast is not in protv.ro's archive: an audio search of every episode listed for that day found no match"
+    },
+    {
+      "date": "2025-08-06",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78271,
+          "end": 126407
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy of this broadcast is cut differently inside the segment (the frame mapping to the dataset segment shifts partway, or part of the segment is not in it), so no single frame range reproduces it"
+    },
+    {
+      "date": "2025-08-15",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73841,
+          "end": 119919
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-08-22",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 78926,
+          "end": 123254
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-09-04",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66061,
+          "end": 109531
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-09-05",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 73126,
+          "end": 116923
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-09-15",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 68950,
+          "end": 112568
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-10-06",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 66153,
+          "end": 111735
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-10-11",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1213,
+          "end": 46305
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-10-17",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_02",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 67135,
+          "end": 113555
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-10-28",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 76704,
+          "end": 122911
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    },
+    {
+      "date": "2025-11-08",
+      "name": "video.mp4",
+      "url": null,
+      "interpreter": "interpreter_01",
+      "crop": null,
+      "segments": [
+        {
+          "index": 0,
+          "start": 1042,
+          "end": 44132
+        }
+      ],
+      "unrecoverable": true,
+      "reason": "protv.ro's copy matches the dataset segment frame-for-frame in time but is a different encode of it (pixels differ; some carry a burned-in sign-language logo), so a download would not reproduce the dataset segment exactly"
+    }
+  ]
+}

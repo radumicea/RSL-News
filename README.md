@@ -32,23 +32,32 @@ three can be stopped at any time and run again to resume.
 The splits are in the manifests: per channel, whole broadcasts drawn at random,
 about 90/5/5 of the labelled hours for train/val/test.
 
-The labels (and features) are on Hugging Face: _link to be added_. Unpack them
-into `dataset/`; their paths mirror `mp4s/`.
+The labels, features and tokenizer are on Hugging Face: _link to be added_. They
+have this folder's layout (`manifests/`, `dataset/`, `tokenizer/`), so a copy of
+them here, or rsl-news-loader fetching them, gives the same files.
+
+## Read it
+
+[rsl-news-loader](https://github.com/radumicea/rsl-news-loader) reads all of it,
+from this folder or from Hugging Face: the splits, each sentence with its features
+(windows, landmarks or video frames, with optional extra time around it) and its
+tokens.
 
 ## Layout
 
 ```
 mp4s/<channel>/.../segment_<i>.mp4          the video (download.sh)
-dataset/<channel>/.../segment_<i>.json      sentences, start/end in seconds from the
-                                            segment's first frame (frame = t * 25)
-dataset/<channel>/.../segment_<i>.pose.npz  body and hands, one entry per frame (extract_poses.py)
+dataset/<channel>/.../segment_<i>.json      sentences: start, end (seconds from the segment's
+                                            first frame; frame = t * 25), text
+dataset/<channel>/.../segment_<i>.pose.npz  body and hands, one entry per frame (extract_poses.py, with
+                                            mp-holistic-plus: github.com/radumicea/mp-holistic-plus)
 dataset/<channel>/.../segment_<i>.face.npz  the face mesh, same frames; read both with extract_poses.load
 dataset/<channel>/.../segment_<i>.bsl5k.npy I3D features, float16 (N, 1024); feature k is
                                             frames [2k, 2k + 8) (extract_features.py; settings: FEATURES.md)
 manifests/                                  source, crop, frame range [start, end) and split of every segment
+tokenizer/                                  the baselines' SentencePiece model (lowercase, 16k pieces)
 scripts/                                    the downloaders
-lib/mp_holistic_plus/                       MediaPipe-based landmarks (pose, face, hands), batched on CUDA
-pipeline/                                   the code that originally built the dataset;
-                                            not needed to reproduce it
+pipeline/                                   how the manifests and labels were made (rebuilds
+                                            them exactly; see its README); not needed to use them
 docs/                                       thesis and slides
 ```

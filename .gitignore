@@ -1,24 +1,12 @@
-.venv
-libs
-scraped
-*.pyc
-*.npy
-*.pt
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
 cookies.txt
-whisper_large-v3-turbo
-whisperx-align_ro
-runs
-wandb
-thumbs/
-/docs/*.json
-# created by download.sh / extract_poses.py; distributed separately
+# made by download.sh, extract_poses.py, extract_features.py and pipeline/; distributed separately
 /mp4s/
 /logs/
 /dataset/
-/mp4s/
-# MediaPipe models, downloaded on first use
-/lib/mp_holistic_plus/assets/*.task
-# BSL-1K I3D code and weights, downloaded on first use
+/tokenizer/
+# downloaded on first use (extract_features.py)
 /lib/bsl1k/
-# TensorRT engines and models unpacked from the MediaPipe bundles, made on first use
-/lib/mp_holistic_plus/cache/
