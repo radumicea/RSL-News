@@ -1,0 +1,159 @@
+{
+ "Digi24": {
+  "pages": {
+   "2020-01-21": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-21-ianuarie-1248416",
+   "2020-11-27": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-26-noiembrie-1408292",
+   "2021-06-20": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-17-iunie-2-1569803",
+   "2024-11-19": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-18-noiembrie-2024-3012111",
+   "2024-11-26": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-25-noiembrie-2024-3021387",
+   "2025-02-11": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-10-februarie-6-3116735",
+   "2025-04-08": "https://www.digi24.ro/emisiuni/jurnale/jurnal-ora-11-00-7-aprilie-6-3190109"
+  },
+  "dropped_days": {
+   "2024-06-02": "same file as 2024-06-03 (both pages play storage/2024/06/03/..._3-jurnal-11.mp4)",
+   "2024-11-21": "byte-identical to 2024-11-20; the bulletin itself says \"suntem în data de 20 noiembrie\""
+  },
+  "dropped_segments": {},
+  "cuts": {
+   "2024-05-02": [
+    [
+     9603,
+     11205
+    ]
+   ]
+  },
+  "reference_segments": {
+   "2019-11-20/0": {
+    "interpreter": "I7",
+    "start": 429,
+    "end": 40261
+   },
+   "2019-11-29/0": {
+    "interpreter": "I8",
+    "start": 89,
+    "end": 23257
+   },
+   "2020-02-14/0": {
+    "interpreter": "I8",
+    "start": 0,
+    "end": 22065
+   },
+   "2020-09-11/0": {
+    "interpreter": "I7",
+    "start": 0,
+    "end": 32705
+   },
+   "2022-06-29/0": {
+    "interpreter": "I8",
+    "start": 288,
+    "end": 41142
+   },
+   "2023-02-10/0": {
+    "interpreter": "I7",
+    "start": 0,
+    "end": 32796
+   },
+   "2023-03-08/0": {
+    "interpreter": "I7",
+    "start": 0,
+    "end": 31995
+   },
+   "2023-03-09/2": {
+    "interpreter": "I8",
+    "start": 8765,
+    "end": 39443
+   },
+   "2023-06-15/0": {
+    "interpreter": "I7",
+    "start": 145,
+    "end": 46368
+   },
+   "2024-06-25/3": {
+    "interpreter": "I6",
+    "start": 22082,
+    "end": 41557
+   },
+   "2024-07-01/0": {
+    "interpreter": "I6",
+    "start": 583,
+    "end": 33662
+   },
+   "2024-09-13/2": {
+    "interpreter": "I6",
+    "start": 8783,
+    "end": 22961
+   },
+   "2025-01-07/0": {
+    "interpreter": "I8",
+    "start": 1908,
+    "end": 16214
+   }
+  }
+ },
+ "PrimaTV": {
+  "thumbnails": {
+   "06dH83giXP8": false,
+   "3hB9ZTxEUSg": false,
+   "7i772vuH0Mo": false,
+   "7tNTflN7OLw": false,
+   "9MbbkckZNa0": false,
+   "9fARkTm0IDw": false,
+   "Cxbr8f6D4gQ": false,
+   "Fw6JRmAt9w8": false,
+   "Gc2Yl0c18PA": false,
+   "J8Wqu9iRdTk": false,
+   "JZi6irtSND8": false,
+   "KHiSWnfLbvY": false,
+   "KaQ4YMEgq8M": false,
+   "LwqH9bOFs2Y": false,
+   "OGUnXgD8Gk0": false,
+   "P_4-lDs2Pjs": false,
+   "Qx59qNU9uDE": false,
+   "RuiABEVnFyE": false,
+   "SkNuHmVr2fM": false,
+   "TeWr6L664io": false,
+   "Uz1vHJVgYlo": false,
+   "V8Hd2sgUO08": false,
+   "VH-tBmjK_yE": false,
+   "VVqvy9_EHiQ": false,
+   "VmaZB7P_nQ0": false,
+   "Vq24Xbbib2c": false,
+   "XeNYURARBdM": false,
+   "YAipcD7WxQc": false,
+   "ZKl4w1z0-k0": false,
+   "ZMtOpM-F404": false,
+   "Z_wGUNdY_8E": false,
+   "_4imb6Dx0es": false,
+   "_C3I1wwUjIw": false,
+   "_YpUFYuQhgI": false,
+   "_zZ7QRcvpcU": false,
+   "iGNBHoAz720": false,
+   "jddiZPsiaQI": false,
+   "kXYirh_ctUI": false,
+   "mMGxXor5g8g": false,
+   "nL_7x_AFKws": false,
+   "qcR3GzDICdo": false,
+   "ryjj48fUXzM": false,
+   "tvv8jAwRi3E": false,
+   "vNRYpCP1Wfw": false,
+   "vRiFCwt4GP0": false,
+   "wsV69yPe6wU": false,
+   "x82NhWoaCWU": false,
+   "xllyz47n43c": false,
+   "zTGl5BL9YQE": false
+  },
+  "dropped_segments": {
+   "9W1xJOUF0lo": [
+    [
+     61175,
+     61526
+    ]
+   ]
+  },
+  "cuts": {}
+ },
+ "ProTV": {
+  "cuts": {},
+  "dropped_segments": {}
+ }
+}

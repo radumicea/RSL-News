@@ -6,10 +6,10 @@ sentence by sentence with the transcribed speech.
 
 | Channel | Segments | Video | Labelled | Sentences |
 |---|---|---|---|---|
-| Digi24 | 2,802 | 516.2 h | 437.3 h | 219,768 |
-| PrimaTV | 576 | 283.0 h | 233.8 h | 145,470 |
-| ProTV | 928 | 415.0 h | 346.7 h | 199,347 |
-| **Total** | **4,306** | **1,214.2 h** | **1,017.9 h** | **564,585** |
+| Digi24 | 2,812 | 516.7 h | 437.6 h | 219,916 |
+| PrimaTV | 868 | 337.2 h | 283.6 h | 173,050 |
+| ProTV | 1,081 | 459.9 h | 384.0 h | 220,809 |
+| **Total** | **4,761** | **1,313.7 h** | **1,105.2 h** | **613,775** |
 
 The footage is not redistributed; this repository rebuilds it from the public
 archives.
@@ -58,6 +58,7 @@ manifests/                                  source, crop, frame range [start, en
 tokenizer/                                  the baselines' SentencePiece model (lowercase, 16k pieces)
 scripts/                                    the downloaders
 pipeline/                                   how the manifests and labels were made (rebuilds
-                                            them exactly; see its README); not needed to use them
+                                            them exactly, or adds the broadcasts aired since;
+                                            see its README); not needed to use them
 docs/                                       thesis and slides
 ```

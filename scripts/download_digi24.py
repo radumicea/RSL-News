@@ -63,9 +63,11 @@ PAGE_HEADERS = {
 }
 
 
-def video_headers(video_src: str) -> str:
-    """Header block ffmpeg needs for the iw.ro CDN."""
-    return f'Referer: {video_src}\r\nUser-Agent: {USER_AGENT}\r\n'
+def video_headers(video_src: str) -> list[str]:
+    """The header block ffmpeg needs for the iw.ro CDN (none for a local file)."""
+    if '://' not in video_src:
+        return []
+    return ['-headers', f'Referer: {video_src}\r\nUser-Agent: {USER_AGENT}\r\n']
 
 
 def resolve_video_src(session: requests.Session, url: str, height: int) -> str:
@@ -88,7 +90,7 @@ def resolve_video_src(session: requests.Session, url: str, height: int) -> str:
 def check_source(video_src: str, height: int) -> None:
     """Refuse to crop a stream that is not the resolution the crop assumes."""
     probe = subprocess.run(
-        ['ffprobe', '-v', 'error', '-headers', video_headers(video_src),
+        ['ffprobe', '-v', 'error', *video_headers(video_src),
          '-select_streams', 'v:0', '-show_entries', 'stream=height',
          '-of', 'default=nw=1:nk=1', video_src],
         capture_output=True, text=True, timeout=300,
@@ -101,7 +103,7 @@ def check_source(video_src: str, height: int) -> None:
 def stream_start_time(video_src: str) -> float:
     """First frame's PTS. Ignoring it shifts every seek by start_time*fps."""
     probe = subprocess.run(
-        ['ffprobe', '-v', 'error', '-headers', video_headers(video_src),
+        ['ffprobe', '-v', 'error', *video_headers(video_src),
          '-select_streams', 'v:0', '-show_entries', 'stream=start_time',
          '-of', 'default=nw=1:nk=1', video_src],
         capture_output=True, text=True, timeout=300,
@@ -121,7 +123,7 @@ def grab_segment(video_src: str, start_time: float, segment: dict,
 
     result = subprocess.run(
         ['ffmpeg', '-v', 'error', '-y',
-         '-headers', video_headers(video_src),
+         *video_headers(video_src),
          '-ss', f'{start_time + first / FPS:.6f}',
          '-i', video_src,
          '-map', '0:v:0', '-frames:v', str(count),
