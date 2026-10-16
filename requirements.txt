@@ -1,4 +1,4 @@
-# Everything download.sh, extract_poses.py and extract_features.py need, for a Python 3.10 venv:
+# Everything download.sh and the extract_*.py scripts need, for a Python 3.10 venv:
 #     python3.10 -m venv .venv && .venv/bin/pip install -r requirements.txt
 # Pinned: what could change the results or break the code. The rest: latest.
 --extra-index-url https://download.pytorch.org/whl/cu130
@@ -9,9 +9,10 @@ beautifulsoup4
 yt-dlp                              # latest: YouTube changes often; download.sh updates it on every run
 bgutil-ytdlp-pot-provider==2.0.0    # download.sh builds the PO-token server of the same version
 
-# extract_poses.py and extract_features.py
+# the extract_*.py scripts
 torch==2.11.0+cu130
 numpy==2.2.6
 opencv-contrib-python==5.0.0.93
 zstandard
-mp-holistic-plus @ git+https://github.com/radumicea/mp-holistic-plus@v1.0.0   # the landmarks; pins its MediaPipe, LiteRT, TensorRT and ONNX
+mp-holistic-plus @ git+https://github.com/radumicea/mp-holistic-plus@v1.1.0   # the landmarks; pins its MediaPipe, LiteRT, TensorRT and ONNX
+rtmw-torch @ git+https://github.com/radumicea/rtmw-torch@v1.0.0               # the RTMW-x landmarks

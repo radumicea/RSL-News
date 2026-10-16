@@ -1,6 +1,6 @@
 # I3D features: settings and why
 
-`extract_features.py` turns each segment into one 1024-d feature per **window of 8 frames, every 2 frames**: 12.5 features per second, each covering 0.32 s. Feature k covers frames [2k, 2k + 8).
+`extract_features_bsl5k.py` turns each segment into one 1024-d feature per **window of 8 frames, every 2 frames**: 12.5 features per second, each covering 0.32 s. Feature k covers frames [2k, 2k + 8).
 
 - **Model:** the BSL-1K I3D with the BSL-5K weights (`bsl5k.pth.tar`). The feature is Mixed_5c averaged over space (7 × 7), computed with fp16 autocast. For an 8-frame window Mixed_5c has a single time step, so nothing is averaged over time; a 16-frame window gives two time steps, which are averaged.
 - **Frames:** RGB / 255, **shorter side resized to 224** (bilinear), centre crop 224 × 224, minus 0.5, as in the model's reference test-time code.

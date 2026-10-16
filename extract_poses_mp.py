@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Landmarks of every segment: mp4s/<channel>/.../segment_<i>.mp4 ->
-dataset/<channel>/.../segment_<i>.pose.npz (body, hands) and segment_<i>.face.npz
+dataset/<channel>/.../segment_<i>.pose_mp.npz (body, hands) and segment_<i>.face_mp.npz
 (face mesh), one entry per video frame, made by mp_holistic_plus (the arrays are
 described in its README.md). Read them with load() below:
 
-    from extract_poses import load
-    pose = load('dataset/ProTV/2021/03/16/segment_1.pose.npz')             # all frames
-    face = load('dataset/ProTV/2021/03/16/segment_1.face.npz', 500, 650)   # frames 500..649
+    from extract_poses_mp import load
+    pose = load('dataset/ProTV/2021/03/16/segment_1.pose_mp.npz')             # all frames
+    face = load('dataset/ProTV/2021/03/16/segment_1.face_mp.npz', 500, 650)   # frames 500..649
 
 Needs ffprobe, an NVIDIA GPU and the packages of requirements.txt. The first run
 builds the TensorRT engines for the GPU (a few minutes, once). Stop it and run it
@@ -31,7 +31,7 @@ from mp_holistic_plus import common   # numpy and OpenCV only; the GPU parts loa
 ROOT = Path(__file__).resolve().parent
 MP4S, DATASET = ROOT / 'mp4s', ROOT / 'dataset'
 
-FACE = ('face_xyz', 'face_ok')  # these go to the .face.npz
+FACE = ('face_xyz', 'face_ok')  # these go to the .face_mp.npz
 CHUNK = 256  # frames compressed together; a clip only decodes the chunks it touches
 
 
@@ -79,8 +79,8 @@ def save(path, arrays):
 
 
 def load(path, start=0, stop=None):
-    """Frames [start, stop) of a .pose.npz or .face.npz (default: all) -> {name: array}.
-    Only the chunks holding them are read."""
+    """Frames [start, stop) of a .pose_mp.npz, .face_mp.npz or .pose_rtmw.npz (default: all)
+    -> {name: array}. Only the chunks holding them are read."""
     with np.load(path) as z:
         fmt = json.loads(str(z['format']))
         frames, chunk = fmt['frames'], fmt['chunk']
@@ -97,11 +97,11 @@ def load(path, start=0, stop=None):
 
 def outputs(video):
     base = DATASET / video.relative_to(MP4S).with_suffix('')
-    return base.with_suffix('.pose.npz'), base.with_suffix('.face.npz')
+    return base.with_suffix('.pose_mp.npz'), base.with_suffix('.face_mp.npz')
 
 
 def finish(video, raw, error, results):
-    """A video's raw output -> checked .pose.npz and .face.npz (written as .part files first)."""
+    """A video's raw output -> checked .pose_mp.npz and .face_mp.npz (written as .part files first)."""
     video = Path(video)
     pose, face = outputs(video)
     parts = [p.with_suffix('.part.npz') for p in (pose, face)]

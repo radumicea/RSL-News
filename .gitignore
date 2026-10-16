@@ -3,10 +3,12 @@ __pycache__/
 .ipynb_checkpoints/
 .vscode/
 cookies.txt
-# made by download.sh, extract_poses.py, extract_features.py and pipeline/; distributed separately
+# made by download.sh, extract_poses_mp.py, extract_poses_rtmw.py, extract_features_bsl5k.py,
+# extract_features_asl2k.py and pipeline/; distributed separately
 /mp4s/
 /logs/
 /dataset/
 /tokenizer/
-# downloaded on first use (extract_features.py)
+# downloaded on first use (extract_features_bsl5k.py, extract_features_asl2k.py)
 /lib/bsl1k/
+/lib/wlasl/
